@@ -1,0 +1,92 @@
+# Laravel
+/.env
+/.env.backup
+/.env.production
+/.phpunit.result.cache
+/auth.json
+/vendor
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+
+# Storage
+/storage/*.key
+/storage/pail
+/storage/logs/*.log
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+!/storage/framework/cache/.gitignore
+!/storage/framework/sessions/.gitignore
+!/storage/framework/views/.gitignore
+
+# Public
+/public/build
+/public/hot
+/public/storage
+!/public/storage/.gitignore
+
+# Node
+/node_modules
+/.npm
+/.yarn
+/.yarn/cache
+/.yarn/unplugged
+/.yarn/build-state.yml
+/.yarn/install-state.gz
+/.pnp.*
+
+# Build
+/public/build
+/public/hot
+/public/mix-manifest.json
+
+# IDE
+/.idea
+/.vscode
+/.fleet
+/.nova
+/.phpactor.json
+/.zed
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Testing
+/.phpunit.cache
+/phpunit.xml.bak
+/.phpunit.result.cache
+coverage/
+.phpunit.result.cache
+
+# Logs
+*.log
+logs/
+*.log.*
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.cache
+
+# Database
+*.sqlite
+*.sqlite-journal
+*.db
