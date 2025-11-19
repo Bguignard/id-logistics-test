@@ -52,3 +52,36 @@ React / Inertia
 Les échanges de données client/serveur devront s’effectuer via Axios
 
 Gestion des erreurs de saisie dans les formulaires
+
+---
+
+## Mise en route du projet
+
+Après récupération du dépôt, suivre les étapes ci-dessous pour démarrer l’application en environnement de développement :
+
+1. **Installation des dépendances PHP**  
+   ```bash
+   composer install
+   ```
+
+2. **Installation des dépendances JavaScript**  
+   ```bash
+   npm install
+   ```
+
+3. **Configuration de l’environnement**  
+   ```bash
+   cp .env.example .env
+   php artisan key:generate
+   php artisan migrate --seed
+   ```
+   - En cas d’utilisation de SQLite, veiller à ce que `DB_CONNECTION=sqlite` soit renseigné dans `.env` et que le fichier `database/database.sqlite` existe (fichier vide suffisant).
+
+4. **Lancement des serveurs de développement**  
+   ```bash
+   php artisan serve
+   npm run dev
+   ```
+
+5. **Accès à l’application**  
+   Ouvrir `http://127.0.0.1:8000` : le front React/Inertia est servi par Vite et communique avec le backend Laravel via Inertia/axios.
